@@ -98,7 +98,7 @@ button {
   border: 0;
 }
 
-.general-header-properties {
+.title {
   font-weight: 700;
   color: var(--header-color);
 }
