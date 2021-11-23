@@ -26,8 +26,10 @@
   margin-bottom: 20px;
 }
 
-.address-footer-item:not(:last-child) {
-  margin-bottom: 9px;
+.address-footer-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contact-link {
@@ -37,11 +39,11 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
-}
 
-.footer-contact-link:hover,
-.footer-contact-link:focus {
-  color: var(--action-color);
+  &:hover,
+  &:focus {
+    color: var(--action-color);
+  }
 }
 
 .map-link {

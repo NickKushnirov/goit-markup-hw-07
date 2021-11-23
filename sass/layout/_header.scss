@@ -39,6 +39,11 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
+
+  &:hover,
+  &:focus {
+    color: var(--action-color);
+  }
 }
 
 .header-nav-link.current::after {
@@ -64,6 +69,11 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
+
+  &:hover,
+  &:focus {
+    color: var(--action-color);
+  }
 }
 
 .contacts-icon {
@@ -78,13 +88,6 @@
 .header-contact-link:hover .contacts-icon,
 .header-contact-link:focus .contacts-icon {
   fill: var(--action-color);
-}
-
-.header-nav-link:hover,
-.header-nav-link:focus,
-.header-contact-link:hover,
-.header-contact-link:focus {
-  color: var(--action-color);
 }
 
 .header-nav-link.active-page {

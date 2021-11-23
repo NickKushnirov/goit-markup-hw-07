@@ -11,10 +11,10 @@
   border: 1px solid var(--subscribe-input-border-color);
   border-radius: 4px;
   color: var(--bg-color);
-}
 
-.subscribe-form-input::placeholder {
-  color: var(--footer-contact-link-color);
+  &::placeholder {
+    color: var(--footer-contact-link-color);
+  }
 }
 
 .subscribe-btn {
