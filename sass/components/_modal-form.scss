@@ -34,12 +34,12 @@
   cursor: pointer;
 
   transition: border-color var(--transition-duration) var(--transition-function);
-}
 
-.modal-form-input:hover,
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--action-color);
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: var(--action-color);
+  }
 }
 
 .modal-form-icon {
@@ -72,20 +72,20 @@
   border-radius: 4px;
 
   transition: border-color var(--transition-duration) var(--transition-function);
-}
 
-.modal-form-message::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
-  color: var(--modal-placeholder-color);
-}
+    color: var(--modal-placeholder-color);
+  }
 
-.modal-form-message:hover,
-.modal-form-message:focus {
-  outline: none;
-  border-color: var(--action-color);
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: var(--action-color);
+  }
 }
 
 .modal-form-checkbox-label {

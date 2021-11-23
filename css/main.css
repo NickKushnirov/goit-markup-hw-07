@@ -248,8 +248,7 @@ button {
   transition: color var(--transition-duration) var(--transition-function);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   color: var(--action-color);
 }
 
@@ -292,8 +291,7 @@ button {
   transition: border-color var(--transition-duration) var(--transition-function);
 }
 
-.modal-form-input:hover,
-.modal-form-input:focus {
+.modal-form-input:hover, .modal-form-input:focus {
   outline: none;
   border-color: var(--action-color);
 }
@@ -332,8 +330,7 @@ button {
   color: var(--modal-placeholder-color);
 }
 
-.modal-form-message:hover,
-.modal-form-message:focus {
+.modal-form-message:hover, .modal-form-message:focus {
   outline: none;
   border-color: var(--action-color);
 }
@@ -431,9 +428,12 @@ button {
 }
 
 .header-section {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.header-wrapper {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--header-border-color);
 }
 
 .menu-list {

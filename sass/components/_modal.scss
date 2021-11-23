@@ -41,11 +41,11 @@
   justify-content: center;
 
   transition: color var(--transition-duration) var(--transition-function);
-}
 
-.modal-btn:hover,
-.modal-btn:focus {
-  color: var(--action-color);
+  &:hover,
+  &:focus {
+    color: var(--action-color);
+  }
 }
 
 .modal-close-icon {

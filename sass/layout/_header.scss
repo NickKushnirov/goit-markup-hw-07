@@ -1,8 +1,10 @@
 .header-section {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
+.header-wrapper {
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid var(--header-border-color);
 }
 
 .menu-list {
