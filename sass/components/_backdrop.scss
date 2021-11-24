@@ -5,9 +5,11 @@
   position: fixed;
   top: 0;
 
-  transition-property: opacity, visibility;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: linear;
+  transition: {
+    property: opacity, visibility;
+    duration: var(--transition-duration);
+    timing-function: linear;
+  }
 }
 
 .is-hidden {

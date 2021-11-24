@@ -36,9 +36,11 @@
   font-style: normal;
   color: var(--footer-contact-link-color);
 
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition: {
+    property: color;
+    duration: var(--transition-duration);
+    timing-function: var(--transition-function);
+  }
 
   &:hover,
   &:focus {

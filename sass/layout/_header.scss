@@ -21,9 +21,16 @@
   display: flex;
 }
 
-.menu-item:not(:last-child),
-.contact-item:not(:last-child) {
-  margin-right: 50px;
+.menu-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contact-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header-nav-link {
@@ -36,25 +43,31 @@
   padding-bottom: 32px;
   position: relative;
 
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition: {
+    property: color;
+    duration: var(--transition-duration);
+    timing-function: var(--transition-function);
+  }
 
   &:hover,
   &:focus {
     color: var(--action-color);
   }
-}
 
-.header-nav-link.current::after {
-  content: '';
-  width: 100%;
-  position: absolute;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--action-color);
-  bottom: -1px;
-  display: block;
+  &.current::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--action-color);
+    bottom: -1px;
+    display: block;
+  }
+
+  &.active-page {
+    color: var(--action-color);
+  }
 }
 
 .header-contact-link {
@@ -66,9 +79,11 @@
   display: flex;
   align-items: center;
 
-  transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition: {
+    property: color;
+    duration: var(--transition-duration);
+    timing-function: var(--transition-function);
+  }
 
   &:hover,
   &:focus {
@@ -80,16 +95,14 @@
   fill: var(--text-color);
   margin-right: 10px;
 
-  transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
-}
+  transition: {
+    property: fill;
+    duration: var(--transition-duration);
+    timing-function: var(--transition-function);
+  }
 
-.header-contact-link:hover .contacts-icon,
-.header-contact-link:focus .contacts-icon {
-  fill: var(--action-color);
-}
-
-.header-nav-link.active-page {
-  color: var(--action-color);
+  .header-contact-link:hover &,
+  .header-contact-link:focus & {
+    fill: var(--action-color);
+  }
 }

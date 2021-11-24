@@ -53,11 +53,11 @@
   transform: translateY(-50%);
 
   transition: fill var(--transition-duration) var(--transition-function);
-}
 
-.modal-form-input:hover + .modal-form-icon,
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--action-color);
+  .modal-form-input:hover + &,
+  .modal-form-input:focus + & {
+    fill: var(--action-color);
+  }
 }
 
 .modal-form-message {

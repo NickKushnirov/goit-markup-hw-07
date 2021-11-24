@@ -30,14 +30,16 @@
   &:focus {
     background-color: var(--action-color);
   }
-}
 
-.social-link.social-link-footer {
-  background-color: var(--bg-social-link-footer);
+  &.social-link-footer {
+    background-color: var(--bg-social-link-footer);
+  }
 
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
+  transition: {
+    property: background-color;
+    duration: var(--transition-duration);
+    timing-function: var(--transition-function);
+  }
 }
 
 .social-icon {
@@ -48,17 +50,19 @@
   transition-property: fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-function);
-}
 
-.social-icon.social-icon-footer {
-  fill: var(--bg-color);
+  transition: {
+    property: fill;
+    duration: var(--transition-duration);
+    timing-function: var(--transition-function);
+  }
 
-  transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
-}
+  &.social-icon-footer {
+    fill: var(--bg-color);
+  }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
-  fill: var(--bg-color);
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: var(--bg-color);
+  }
 }
