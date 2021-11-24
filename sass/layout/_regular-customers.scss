@@ -38,12 +38,14 @@
   height: 60px;
   fill: var(--icon-base-color);
 
-  transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
-}
+  transition: {
+    property: fill;
+    duration: var(--transition-duration);
+    timing-function: var(--transition-function);
+  }
 
-.customer-item-link:hover .customer-icon,
-.customer-item-link:focus .customer-icon {
-  fill: var(--action-color);
+  .customer-item-link:hover &,
+  .customer-item-link:focus & {
+    fill: var(--action-color);
+  }
 }
