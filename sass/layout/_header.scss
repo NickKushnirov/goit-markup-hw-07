@@ -56,9 +56,8 @@
 
   &.current::after {
     content: '';
-    width: 100%;
     position: absolute;
-    height: 4px;
+    @include element-size(100%, 4px);
     border-radius: 2px;
     background-color: var(--action-color);
     bottom: -1px;
