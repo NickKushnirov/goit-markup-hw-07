@@ -507,7 +507,7 @@ button {
   color: var(--action-color);
 }
 
-.contacts-icon {
+.contact-icon {
   fill: var(--text-color);
   margin-right: 10px;
   transition-property: fill;
@@ -515,8 +515,8 @@ button {
   transition-timing-function: var(--transition-function);
 }
 
-.header-contact-link:hover .contacts-icon,
-.header-contact-link:focus .contacts-icon {
+.header-contact-link:hover .contact-icon,
+.header-contact-link:focus .contact-icon {
   fill: var(--action-color);
 }
 
