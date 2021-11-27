@@ -271,6 +271,10 @@ button {
   margin-bottom: 10px;
 }
 
+.modal-form-field.comment {
+  margin-bottom: 20px;
+}
+
 .modal-form-wrapper {
   display: block;
   position: relative;
@@ -469,7 +473,11 @@ button {
   color: var(--action-color);
 }
 
-.header__nav-link.current::after {
+.header__nav-link--active-page {
+  color: var(--action-color);
+}
+
+.header__nav-link--active-page::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -478,10 +486,6 @@ button {
   background-color: var(--action-color);
   bottom: -1px;
   display: block;
-}
-
-.header__nav-link.active-page {
-  color: var(--action-color);
 }
 
 .header__contact-link {
@@ -509,8 +513,8 @@ button {
   transition-timing-function: var(--transition-function);
 }
 
-.header-contact-link:hover .header__contact-icon,
-.header-contact-link:focus .header__contact-icon {
+.header__contact-link:hover .header__contact-icon,
+.header__contact-link:focus .header__contact-icon {
   fill: var(--action-color);
 }
 

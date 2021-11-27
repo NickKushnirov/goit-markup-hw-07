@@ -53,8 +53,12 @@
   &:focus {
     color: var(--action-color);
   }
+}
 
-  &.current::after {
+.header__nav-link--active-page {
+  color: var(--action-color);
+
+  &::after {
     content: '';
     position: absolute;
     @include element-size(100%, 4px);
@@ -62,10 +66,6 @@
     background-color: var(--action-color);
     bottom: -1px;
     display: block;
-  }
-
-  &.active-page {
-    color: var(--action-color);
   }
 }
 
@@ -100,8 +100,8 @@
     timing-function: var(--transition-function);
   }
 
-  .header-contact-link:hover &,
-  .header-contact-link:focus & {
+  .header__contact-link:hover &,
+  .header__contact-link:focus & {
     fill: var(--action-color);
   }
 }
