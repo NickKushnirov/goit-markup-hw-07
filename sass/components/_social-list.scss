@@ -12,31 +12,29 @@
 }
 
 .social-link {
-  @include element-size(100%, 100%);
   display: block;
+  @include element-size(100%, 100%);
+
   background-color: var(--bg-color);
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-function);
-
-  &:hover,
-  &:focus {
-    background-color: var(--action-color);
+  transition: {
+    property: background-color;
+    duration: var(--transition-duration);
+    timing-function: var(--transition-function);
   }
 
   &.social-link-footer {
     background-color: var(--bg-social-link-footer);
   }
 
-  transition: {
-    property: background-color;
-    duration: var(--transition-duration);
-    timing-function: var(--transition-function);
+  &:hover,
+  &:focus {
+    background-color: var(--action-color);
   }
 }
 

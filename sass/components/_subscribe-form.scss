@@ -1,8 +1,8 @@
-.subscribe-wrapper {
+.subscribe-form__wrapper {
   display: flex;
 }
 
-.subscribe-form-input {
+.subscribe-form__input {
   @include element-size(358px, 50px);
   margin-right: 12px;
   padding: 16px;
@@ -16,25 +16,23 @@
   }
 }
 
-.subscribe-btn {
+.subscribe-form__btn {
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--bg-color);
   background-color: var(--action-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
 
-.subscribe-btn {
   padding: 10px 29px;
   display: flex;
   align-items: center;
 }
 
-.subscribe-btn-text {
+.subscribe-form__btn-text {
   margin-right: 10px;
 }
 
-.subscribe-btn-icon {
+.subscribe-form__btn-icon {
   fill: var(--bg-color);
 }

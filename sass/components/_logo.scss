@@ -6,21 +6,21 @@
   color: var(--action-color);
 }
 
-.logo-header {
+.header__logo {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.logo-header-second-part {
+.header__logo--right-side {
   color: var(--logo-header-color);
 }
 
-.logo-footer {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 }
 
-.logo-footer-second-part {
+.footer__logo--right-side {
   color: var(--bg-color);
 }
